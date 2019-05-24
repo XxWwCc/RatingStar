@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/start</item>
+        <item name="android:numColumns">5</item>
+    </style>
+
+    <declare-styleable name="RatingBarView">
+        <!--大小-->
+        <attr name="starImageSize" format="dimension"/>
+        <!--总个数-->
+        <attr name="starCount" format="integer"/>
+        <!--没选中状态图片-->
+        <attr name="starEmpty" format="reference"/>
+        <!--选中状态图片-->
+        <attr name="starFill" format="reference"/>
+        <!--左右padding-->
+        <attr name="paddingAbout" format="integer"/>
+        <!--上下padding-->
+        <attr name="paddingUpDown" format="integer"/>
+        <!--左右margin-->
+        <attr name="marginAbout" format="integer"/>
+        <!--上下margin-->
+        <attr name="marginUpDown" format="integer"/>
+    </declare-styleable>
+
+</resources>
